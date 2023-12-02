@@ -23,6 +23,7 @@ import Jimp from "jimp";
           resolve(outpath);
         });
     } catch (error) {
+      console.log('image decode error', error)
       reject(error);
     }
   });
